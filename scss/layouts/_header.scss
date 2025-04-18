@@ -1,0 +1,182 @@
+.header {
+  background-color: #faf5f3;
+  background-image: url(../../img/pattern-light-bg.svg),
+    url(../../img/pattern-glow.svg);
+  background-repeat: repeat, no-repeat;
+  background-position: center, bottom -500px right -300px;
+  padding-bottom: 8rem;
+}
+.header__hero--top {
+}
+.site-logo {
+  margin-top: 3.2rem;
+  margin-bottom: 8rem;
+}
+.header__hero--bottom {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.header__hero__info {
+  display: flex;
+  width: 57rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.header__hero__info__title {
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; 
+  letter-spacing: -2px;
+  background: linear-gradient(
+    107deg,
+    var(--colors-light-salmon-500, #fea36f) -11.37%,
+    var(--colors-neutral-900, #062630) 61.84%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2.4rem;
+}
+.header__hero__info__des {
+  color: var(--colors-neutral-700, #385159);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; 
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+.btn {
+}
+.btn__hero {
+  display: flex;
+  padding: var(--spacing-250, 2rem) var(--spacing-300, 2rem);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-200, 16px);
+  border-radius: 8px;
+  border: 2px solid var(--colors-neutral-900, #062630);
+  background: var(--colors-light-salmon-50, #fff5ef);
+  color: var(--colors-neutral-900, #062630);
+  font-family: "Martian Mono";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -1px;
+  margin-bottom: 2rem;
+  transition: 0.3s;
+
+  &:hover {
+    border-radius: 8px;
+    border: 2px solid var(--colors-neutral-900, #062630);
+    background: linear-gradient(
+      90deg,
+      var(--colors-light-salmon-100, #ffe2d1) 0%,
+      var(--colors-light-salmon-50, #fff5ef) 100%
+    );
+  }
+}
+.testemonalis {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  img {
+    width: 11rem;
+  }
+}
+.testemonalis__info {
+  p {
+    color: var(--colors-neutral-700, #385159);
+    text-align: center;
+
+    /* Text Preset 7 */
+    font-family: "Martian Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 16.8px */
+    letter-spacing: -1px;
+  }
+  img {
+    width: 12rem;
+    height: 2.4rem;
+  }
+}
+
+.header__hero__imgs {
+  width: 53.6rem;
+  height: 60.6rem;
+  border-radius: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 70.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header__hero--bottom {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .header__hero__img {
+    margin-top: 6.4rem;
+  }
+  .header__hero__imgs {
+    width: 70.4rem;
+  }
+  .header__hero__info {
+    margin-left: -10rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 343px;
+    padding-right: 1rem;
+    
+  }
+  .site-logo {
+    margin-top: 3.2rem;
+    margin-bottom: 4.8rem;
+    margin-left: 1rem;
+  }
+  .header__hero__info__title {
+    font-size: 3.8rem;
+  }
+  .header__hero__imgs {
+    width: 34.3rem;
+  }
+
+  .header__hero__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 37.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: var(--spacing-400, 32px);
+    align-self: stretch;
+  }
+
+  .btn__hero {
+    font-size: 1.6rem;
+  }
+  .testemonalis__info {
+    p {
+      text-align: start;
+    }
+  }
+}

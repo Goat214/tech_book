@@ -1,0 +1,230 @@
+.main {
+    gap: 12rem;
+  }
+  .container {
+  }
+  .read {
+    display: flex;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+    align-items: center;
+    gap: 8rem;
+  }
+  .read__img {
+    width: 56rem;
+    height: 52rem;
+    border-radius: 1.2rem;
+  }
+  .read__info {
+  }
+  .read__info__title {
+    color: var(--colors-neutral-900, #062630);
+    font-family: "Martian Mono";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 65px */
+    letter-spacing: -2px;
+    margin-bottom: 3.4rem;
+  }
+  .read__info__ul {
+    color: var(--colors-neutral-700, #385159);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+    letter-spacing: -0.5px;
+    li {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      width: 38.9rem;
+      img {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+    }
+  }
+
+  .club {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-bottom: 12rem;
+  }
+  .container {
+  }
+  .club__info {
+    width: 53rem;
+    margin-right: 8rem;
+  }
+  .club__info__title {
+    color: #062630;
+  
+    /* Text Preset 2 */
+    font-family: "Martian Mono";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 65px */
+    letter-spacing: -2px;
+    margin-bottom: 2.4rem;
+    position: relative;
+  }
+  .title__img {
+    position: absolute;
+    top: 6.6rem;
+    left: 14.5rem;
+  }
+  .club__info__description {
+    color: var(--colors-neutral-700, #385159);
+  
+    /* Text Preset 5 */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+    letter-spacing: -0.5px;
+  }
+  .club__tecimg {
+    position: absolute;
+    width: 12rem;
+    top: 35.1rem;
+    left: 56rem;
+  }
+  .club__img {
+    width: 56rem;
+    height: 52rem;
+    border-radius: 1.2rem;
+  }
+  
+
+  @media screen and (max-width:768px ) {
+    .container {
+        width: 70.4rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .read {
+        display: flex;
+        flex-direction: column-reverse;
+        
+      }
+
+      .read__img {
+        width: 70.4rem;
+        height: 79.8rem;
+        border-radius: 1.2rem;
+      }
+
+      .read__info__ul {
+       
+    li {
+      width: 70rem;
+      margin-bottom: 2rem;
+      
+     
+    }
+  }
+
+  .club {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    margin-bottom: 12rem;
+  }
+
+  .club__img {
+    width: 70.4rem;
+    height: 65.3rem;
+    border-radius: 1.2rem;
+    margin-top: 4rem;
+  }
+
+  .club__tecimg {
+    position: absolute;
+    width: 12rem;
+    top: 75.1rem;
+    left: 56rem;
+  }
+   
+
+  .club__info {
+    width: 70.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title__img {
+    position: absolute;
+    top: 6.6rem;
+    left: 14.5rem;
+  }
+  }
+
+
+  @media screen  and (max-width: 375px) {
+    
+    .container {
+        
+        
+    }
+
+    .read__info__title {
+        font-size: 3rem;
+    }
+    .read__info__ul {
+        color: var(--colors-neutral-700, #385159);
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 28px */
+        letter-spacing: -0.5px;
+        li {
+          display: flex;
+          align-items: center;
+          gap: 1.6rem;
+          width: 38.9rem;
+          img {
+            width: 2.4rem;
+            height: 2.4rem;
+          }
+        }
+      }
+
+      .read__img {
+        width: 34.8rem;
+        height: 31rem;
+        
+        border-radius: 1.2rem;
+      }
+    
+
+
+
+      .club__info__title {
+        width: 34.3rem;
+        font-size: 3.5rem;
+      }
+
+      .club {
+        max-width: 34.3rem;
+        
+      }
+
+      .title__img {
+        width: 10rem;
+        position: absolute;
+        top: 9.6rem;
+        left: -1rem;
+      }
+
+  }
